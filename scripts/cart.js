@@ -23,7 +23,7 @@ function renderCart() {
         
         return `
             <div class="cart-item ${animationClasses}" data-index="${index}" style="--card-index: ${rowIndex};">
-                <img src="/images/${item.name}.jpg" alt="${item.name}" class="cart-item-img">
+                <img src="images/${item.name}.jpg" alt="${item.name}" class="cart-item-img">
                 <div class="cart-item-details">
                     <h4 class="cart-item-name">${item.name}</h4>
                     <div class="cart-item-price">$${totalItemPrice.toFixed(2)}</div>
