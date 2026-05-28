@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | Coffee Shop</title>
+    <link rel="icon" type="image/png" href="./images/your-logo.png">
+    <link rel="stylesheet" href="./styles/cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img src="./images/hot-coffee-cup-with-foam-minimal-latte-coffee-cup-view-from-above-top-view-minimal-coffee-cup-for-poster-design-coffee-cup-flat-pro-illustration-vector.jpg" alt="Logo">
+            <h1>Coffee Shop</h1>
+        </div>
+        <ul>
+            <li><a href="./main.html">Home</a></li>
+            <li><a href="./main.html#menu">Menu</a></li>
+            <li><a href="./about.html">About us</a></li>
+            <li><a href="./cart.html" class="nav-cart-link"><img src="./images/icons8-cart-64.png" alt="Cart" class="cart-icon"></a></li>
+        </ul>
+    </nav>
+
+    <main class="cart-wrapper">
+        <div class="orange-smear smear-left"></div>
+        <div class="orange-smear smear-right"></div>
+
+        <div class="cart-container">
+            <h2 class="cart-heading">Your <span>Orders</span></h2>
+            
+            <div class="cart-items-list">
+                <div class="empty-cart-message">Your cart is currently empty. Head back to the menu to add delicious crafts!</div>
+            </div>
+        </div>
+
+        <aside class="checkout-panel">
+            <h3>Order Summary</h3>
+            <hr>
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span id="subtotal-val">$0.00</span>
+            </div>
+            <div class="summary-row">
+                <span>Estimated Tax (8%)</span>
+                <span id="tax-val">$0.00</span>
+            </div>
+            <div class="summary-row">
+                <span>Delivery Fee</span>
+                <span id="delivery-val" class="free-text">FREE</span>
+            </div>
+            <hr>
+            <div class="summary-row total-row">
+                <span>Total Amount</span>
+                <span id="total-val">$0.00</span>
+            </div>
+            <button class="checkout-btn" id="placeOrderBtn">Proceed to Checkout</button>
+        </aside>
+    </main>
+    
+
+    <section class="contact-section-container">
+    <div class="contact-grid">
+        
+        <div class="contact-info">
+            <h2>Get In <span>Touch</span></h2>
+            <p>Have questions about our single-origin roasts or want to host a private tasting? Drop us a line.</p>
+            
+            <div class="contact-details-list">
+                <div class="contact-meta-item">
+                    <span class="meta-icon">📍</span>
+                    <div>
+                        <span>Location</span>
+                        <p>123 Roasted Blvd, Bean City</p>
+                    </div>
+                </div>
+                <div class="contact-meta-item">
+                    <span class="meta-icon">✉️</span>
+                    <div>
+                        <span>Email Us</span>
+                        <p>hello@coffeeshop.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+            <form action="#">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="form-input" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-input" placeholder="name@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" class="form-textarea" placeholder="How can we help you?" required></textarea>
+                </div>
+                <button type="submit" class="form-submit-btn">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+    <script type="module" src="./scripts/cart.js"></script>
+</body>
+</html>
