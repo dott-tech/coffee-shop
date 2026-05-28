@@ -59,7 +59,7 @@ if (specialsContainer && specials) {
         return `
             <div class="special-card scroll-animate slide-left" data-id="${item.id}" style="--card-index: ${rowIndex};">
                 <div class="special-badge">Special</div>
-                <img src="images/${item.name}.jpg" alt="${item.name}" class="special-img">
+                <img src="./images/${item.name}.jpg" alt="${item.name}" class="special-img">
                 <h3 class="special-title">${item.name}</h3>
                 <div class="special-price">$${item.price.toFixed(2)}</div>
                 <p class="special-desc">${item.description}</p>
@@ -75,7 +75,7 @@ if (gridContainer && products) {
         const rowIndex = index % 4; 
         return `
             <div class="product-card scroll-animate slide-left" data-id="${product.id}" style="--card-index: ${rowIndex};">
-                <img src="images/${product.name}.jpg" alt="${product.name}" class="product-img">
+                <img src="./images/${product.name}.jpg" alt="${product.name}" class="product-img">
                 <h3 class="product-title">${product.name}</h3>
                 <div class="product-price">$${product.price.toFixed(2)}</div>
                 <p class="product-desc">${product.description}</p>
